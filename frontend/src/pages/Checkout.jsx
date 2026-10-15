@@ -129,6 +129,11 @@ export default function Checkout() {
               name: shippingAddress.fullName,
               contact: shippingAddress.phone,
             },
+            modal: {
+              ondismiss: function () {
+                setLoading(false);
+              },
+            },
             theme: { color: "#6366f1" },
           };
 
